@@ -1,0 +1,13 @@
+ /* Mobile */
+        @media (max-width: 600px) {
+            body {
+                background: rgb(223, 21, 21);
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 601px) {
+            body {
+                background: lightgreen;
+            }
+        }

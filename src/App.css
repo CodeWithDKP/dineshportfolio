@@ -96,9 +96,11 @@ section {
   /* Show hamburger */
   .menu-btn {
     display: block;
+    font-size: 1rem;
   }
 .logo{
   margin-left: 0;
+  font-size: 1rem;
 }
   /* Hide nav links by default */
   .nav-links {
@@ -1336,11 +1338,80 @@ section {
   }
 }
 
-/* Extra small devices (phones, <480px) */
-@media (max-width: 480px) {
-  .contact-title { font-size: 1.5rem; }
-  .contact-info li { font-size: 0.9rem; }
+/* ===== Ultra Responsive Contact Section (200px to 400px) ===== */
+@media (max-width: 400px) {
+  .contact-section {
+    flex-direction: column;      /* stack left + right */
+    padding: 10px 5px;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  /* Left content */
+  .contact-left .contact-title {
+    font-size: 1.2rem;           /* scale down title */
+    margin-bottom: 8px;
+  }
+
+  .contact-left p {
+    font-size: 0.85rem;          /* smaller text */
+    margin: 0 0 6px 0;
+    line-height: 1.2;
+  }
+
+  .contact-info {
+    font-size: 0.8rem;
+    gap: 3px;
+    padding-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-info li {
+    font-size: 0.8rem;
+    gap: 2px;
+    flex-wrap: wrap;
+    word-break: break-word;      /* prevent overflow */
+  }
+
+  .contact-info a {
+    font-size: 0.8rem;
+  }
+
+  /* Right form */
+  .contact-right form {
+    width: 100%;
+    margin: 0;
+    gap: 4px;
+  }
+
+  .contact-right input,
+  .contact-right textarea,
+  .contact-right button {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    padding: 4px 6px;
+    border-radius: 4px;
+  }
+
+  .contact-right textarea {
+    min-height: 40px;
+  }
+
+  .contact-right button {
+    font-size: 0.75rem;
+    padding: 5px;
+  }
 }
+
+
 
 /* src/components/Footer.css */
 .footer {
