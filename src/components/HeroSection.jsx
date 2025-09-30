@@ -24,16 +24,17 @@ function HeroSection() {
           <Col md={7} className="hero-content text-start">
             <h1 className="hero-title">Hi, I’m Dinesh Kumar</h1>
             <p className="hero-text">
-              I’m a passionate{" "}
-              <span className="highlight">Frontend Developer</span> who loves
-              building clean, modern, and user-friendly web applications.
+              I’m a passionate <span className="highlight">Frontend Developer | React.js Enthusiast </span>building <span className="highlight">responsive, modern web apps</span> with clean UI and smooth interactions.
+              Skilled in HTML, CSS, JavaScript, Bootstrap, and React, I leverage <span className="highlight">AI-assisted coding</span> to deliver real-world projects efficiently.
+              Excited to grow into <span className="highlight">full-stack development</span> and create impactful digital experiences.
             </p>
 
             {/* Buttons */}
             <div className="d-flex flex-wrap gap-3">
-              <Button variant="outline-light" className="hero-btn">
-                See Projects
-              </Button>
+
+              <a href="#projects" onClick={() => setIsOpen(false)}><Button variant="outline-light" className="hero-btn">See Projects</Button> </a>
+
+
 
               <a
                 href={resumeFile}

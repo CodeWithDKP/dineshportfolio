@@ -9,10 +9,10 @@ function Footer() {
     <p>© 2025 Dinesh Kumar</p>
   </div>
   <div className="footer-icons">
-    <a href="mailto:youremail@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope /></a>
-    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer"><FaLinkedin /></a>
-    <a href="https://github.com/yourgithub" target="_blank" rel="noreferrer"><FaGithub /></a>
-    <a href="https://instagram.com/yourprofile" target="_blank" rel="noreferrer"><FaInstagram /></a>
+    <a href="mailto:dineshkumarptech@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope /></a>
+    <a href="http://www.linkedin.com/in/dineshkumarpade" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+    <a href="https://github.com/CodeWithDKP" target="_blank" rel="noreferrer"><FaGithub /></a>
+    <a href="https://www.instagram.com/itsdineshverse?igsh=b2kwczVqNW9rYm54" target="_blank" rel="noreferrer"><FaInstagram /></a>
   </div>
 </footer>
 

@@ -1,4 +1,3 @@
-// src/components/AboutSection.jsx
 import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -9,15 +8,25 @@ function AboutSection() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("animate");
-            observer.unobserve(entry.target); // run only once
+            observer.unobserve(entry.target); // animate only once
           }
         });
       },
-      { threshold: 0.2 } // trigger when 20% visible
+      { threshold: 0.2 }
     );
 
-    const elements = document.querySelectorAll(".about-title, .about-content p");
-    elements.forEach((el) => observer.observe(el));
+    // Include paragraphs, education title, and each list item
+    const elements = document.querySelectorAll(
+      ".about-title, .about-content p, .education-title, .education ul li"
+    );
+
+    // Add custom property --i for staggered li
+    elements.forEach((el, index) => {
+      if (el.tagName === "LI") {
+        el.style.setProperty("--i", index);
+      }
+      observer.observe(el);
+    });
 
     return () => observer.disconnect();
   }, []);
@@ -30,17 +39,31 @@ function AboutSection() {
             <h2 className="about-title">About Me</h2>
             <div className="about-content">
               <p>
-                Hello! I’m <span className="highlight">Dinesh</span>, a passionate developer with a strong foundation 
-                in <span className="highlight">frontend development</span>. I enjoy creating responsive and modern 
-                websites using <span className="highlight">HTML, CSS, JavaScript, React, and Bootstrap</span>.
+                I’m <span className="highlight">Dinesh Kumar</span> from Kurnool, Andhra Pradesh, a passionate
+                <span className="highlight"> Frontend Developer</span>.
+                I aim to deliver high-quality and efficient solutions, leveraging the latest technologies and
+                <span className="highlight"> AI tools</span> to create interactive, user-friendly digital experiences.
               </p>
               <p>
-                💡 <strong>Passion:</strong> Love building real-world applications with a focus on clean UI/UX.
+                I have worked on various projects during my learning journey that challenged me to think critically,
+                solve problems effectively, and apply my knowledge practically.
+                I’m enthusiastic about continuing to grow as a developer, expanding into backend technologies,
+                and creating impactful full-stack applications in the future.
               </p>
-              <p>
-                🎯 <strong>Current Goal:</strong> Looking for opportunities as a{" "}
-                <span className="highlight">Frontend / React Developer in 2025</span>.
-              </p>
+
+              <div className="education">
+                <h3 className="education-title">Education</h3>
+                <ul>
+                  <li>
+                    B.Tech in Computer Science & Engineering | Dr. KV Subba Reddy Institute of Technology
+                    <span className="edu-sub">| 2022 - 2025 | 73%</span>
+                  </li>
+                  <li>
+                    Diploma in Electrical & Electronics Engineering | Dr. KV Subba Reddy Institute of Technology
+                    <span className="edu-sub">| 2019 - 2022 | 76%</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </Col>
         </Row>
