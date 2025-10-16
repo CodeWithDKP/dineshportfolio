@@ -21,13 +21,13 @@ function Achievements() {
       id: 3,
       icon: <FaProjectDiagram color="purple" />,
       title: "Freelance Digital Marketing",
-      subtitle: "Social media & websites for clients",
+      subtitle: "Social media & websites for clients - Kresaa.in",
     },
     {
       id: 4,
       icon: <FaProjectDiagram color="purple" />,
       title: "Built & Deployed 6+ Projects",
-      subtitle: "TravelEase, SpiceVilla, Exam Simulator, Grocery Billing, etc.",
+      subtitle: "TravelEase, Buystic, Kresaa.in, VoiceWeather, FlipkartClone etc.",
     },
   ];
 

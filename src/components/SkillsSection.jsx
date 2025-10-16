@@ -3,7 +3,8 @@ import { useEffect, useRef, useState } from "react";
 const skillsData = {
   frontend: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
   backend: ["Java", "APIs"],
-  tools: ["GitHub", "Canva", "VS Code", "Postman"],
+  tools: ["GitHub", "Canva", "Word Press", "VS Code", "Postman"],
+  digitalMarketing: ["SEO", "Google Analytics", "Meta Ads", "Content Creation"],
 };
 
 function SkillsSection() {
