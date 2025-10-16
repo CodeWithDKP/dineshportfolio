@@ -4,27 +4,24 @@ import { Link } from "react-router-dom"; // ✅ import added
 const experiences = [
   {
     id: 1,
-    role: "Frontend Developer Intern",
+    role: "Digital Marketing Intern",
     company: "Modern Minds",
-    duration: "Jan 2025 – Present",
+    duration: "Jun 2025 - Aug 2025",
     description:
-      "Worked on real-world client projects, building responsive websites with React, Bootstrap, and APIs. Contributed to UI/UX improvements and performance optimization.",
+      "Reported to Sujith Madhav, Co-Founder. Assisted in creating and scheduling social media content, conducting market research, analyzing competitor strategies, supporting ad marketing campaigns, and monitoring digital marketing metrics. Contributed to enhancing brand presence, executing marketing strategies, and supporting website promotion initiatives."
   },
   {
     id: 2,
-    role: "Web Developer Trainee",
-    company: "Software Training Institute",
-    duration: "Jul 2024 – Dec 2024",
+    role: "Freelance Web Developer",
+    company: "Kresaa",
+    duration: "Jun 2025 - Aug 2025",
     description:
-      "Trained in HTML, CSS, JavaScript, and React. Built multiple frontend projects including portfolio, travel site, and e-commerce app.",
+      "Built responsive websites for clients using WordPress, integrating design and functionality without manually writing code. Collaborated with clients to meet requirements and ensure professional UX/UI."
+
   },
   {
     id: 3,
-    role: "Digital Marketing Intern",
-    company: "Kresaa Digital Services",
-    duration: "2023",
-    description:
-      "Handled SEO, social media campaigns, and content planning. Gained experience in marketing analytics and Canva design.",
+    role: "Update Soon",
   },
 ];
 
