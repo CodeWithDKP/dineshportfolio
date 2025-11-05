@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
 import profilePic from "../assets/profile.jpg"; // <- put your pic inside /src/assets/
-import resumeFile from "../assets/dineshresume.pdf"; // <- put your resume PDF inside /src/assets/
+import resumeFile from "../assets/DineshkumarPade.pdf"; // <- put your resume PDF inside /src/assets/
 
 function HeroSection() {
   return (
