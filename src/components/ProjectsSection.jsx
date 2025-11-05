@@ -96,7 +96,7 @@ function ProjectsSection() {
 
   return (
     <section className="projects-section">
-      <h2 className="projects-title">My Projects</h2>
+      <h2 className="projects-title">Projects</h2>
 
       <div className={`projects-grid-wrapper ${activeProject ? "hide-grid" : "show-grid"}`}>
         <div className="projects-grid">

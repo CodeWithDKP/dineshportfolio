@@ -12,7 +12,7 @@ function Footer() {
     <a href="mailto:dineshkumarptech@gmail.com" target="_blank" rel="noreferrer"><FaEnvelope /></a>
     <a href="http://www.linkedin.com/in/dineshkumarpade" target="_blank" rel="noreferrer"><FaLinkedin /></a>
     <a href="https://github.com/CodeWithDKP" target="_blank" rel="noreferrer"><FaGithub /></a>
-    <a href="https://www.instagram.com/itsdineshverse?igsh=b2kwczVqNW9rYm54" target="_blank" rel="noreferrer"><FaInstagram /></a>
+   
   </div>
 </footer>
 

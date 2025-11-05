@@ -93,16 +93,7 @@ function ContactSection() {
               github.com/CodeWithDKP
             </a>
           </li>
-          <li>
-            <FaInstagram />{" "}
-            <a
-              href="https://www.instagram.com/itsdineshverse?igsh=b2kwczVqNW9rYm54"
-              target="_blank"
-              rel="noreferrer"
-            >
-              instagram.com/itsdineshverse
-            </a>
-          </li>
+          
         </ul>
       </div>
 

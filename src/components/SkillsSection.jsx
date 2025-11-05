@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 
 const skillsData = {
-  frontend: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
-  backend: ["Java", "APIs"],
+  frontend: ["HTML5", "CSS3", "JavaScript(ES6+)", "React.js(v18)", "Bootstrap5"],
+  backend: ["Core Java", "APIs","SQL"],
   tools: ["GitHub", "Canva", "Word Press", "VS Code", "Postman"],
-  digitalMarketing: ["SEO", "Google Analytics", "Meta Ads", "Content Creation"],
+  
 };
-
+{/* digitalMarketing: ["SEO", "Google Analytics", "Meta Ads", "Content Creation"],*/}
 function SkillsSection() {
   const sectionRef = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -29,7 +29,7 @@ function SkillsSection() {
 
   return (
     <section className="skills-section" ref={sectionRef}>
-      <h2 className={`skills-title ${visible ? "fade-in" : ""}`}>My Skills</h2>
+      <h2 className={`skills-title ${visible ? "fade-in" : ""}`}>Skills</h2>
 
       {Object.entries(skillsData).map(([category, skills], idx) => (
         <div key={idx}>
